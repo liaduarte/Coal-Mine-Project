@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Coal Mine</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>coalmine.png</normaloff>coalmine.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QgsMapCanvas" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>601</width>
+      <height>681</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Water">
+    <property name="title">
+     <string>&amp;Water</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Soil">
+    <property name="title">
+     <string>&amp;Soil</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Temperature">
+    <property name="title">
+     <string>&amp;Temperature Points</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTemp">
+    <property name="title">
+     <string>Temperature Maps</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuDEM">
+    <property name="title">
+     <string>DEM</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuLULC">
+    <property name="title">
+     <string>LULC</string>
+    </property>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Water"/>
+   <addaction name="menu_Soil"/>
+   <addaction name="menu_Temperature"/>
+   <addaction name="menuTemp"/>
+   <addaction name="menuDEM"/>
+   <addaction name="menuLULC"/>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsMapCanvas</class>
+   <extends>QWidget</extends>
+   <header>qgis.gui</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

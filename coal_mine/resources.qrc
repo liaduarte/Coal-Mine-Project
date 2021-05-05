@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/plugins/coal_mine" >
+        <file>coalmine2.png</file>
+	<file>coalmine3.png</file>
+<file>coalmine4.png</file>
+	<file>coalmine.png</file>
+    </qresource>
+</RCC>
